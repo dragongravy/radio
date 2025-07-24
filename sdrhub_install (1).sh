@@ -97,7 +97,10 @@ echo "🛠 Writing mosquitto.conf..."
 mkdir -p ~/sdrhub/mosquitto/config
 cat <<EOF > ~/sdrhub/mosquitto/config/mosquitto.conf
 allow_anonymous true
+
 listener 1883
+protocol mqtt
+
 listener 9001
 protocol websockets
 EOF
